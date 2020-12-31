@@ -1,0 +1,341 @@
+html, body{
+  /* font-family: "Roboto", sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Navbar */
+#navi-main {
+  z-index: 1000;
+}
+
+.navi-toolbar {
+  z-index: 50;
+  display: grid;
+  min-height: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  background: rgba(0, 0, 0, 0.8);
+  grid-gap: 1.5em;
+  padding: 0 10%;
+  filter: brightness(50%);
+
+}
+
+.navi-toolbar-links {
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 1.5em;
+  }
+
+  .navi-toolbar-links a {
+    background: linear-gradient(to right, #FFB911, #FFB911 50%, black 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+  }
+
+  .navi-toolbar-links a:hover {
+    background-position: 0 100%;
+  }
+
+  .empty2 {
+    /* -webkit-box-shadow: 0 3px 2px -2px black;
+  	   -moz-box-shadow: 0 3px 2px -2px black;
+  	        box-shadow: 0 3px 3px -3px black; */
+  }
+
+  .navi-toolbar-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+  }
+
+  .navi-toolbar-links a:hover {
+    color: red;
+  }
+
+.fa-phone, .fa-map-marker {
+  padding-right: 5px;
+}
+
+.navibar {
+  display: grid;
+  min-height: 70px;
+    grid-template-columns: repeat(3, 1fr);
+  /* background-color: rgb(0,51,51, 0.8); */
+  background-color: transparent;
+  grid-gap: 1.5em;
+  padding: 0% 10%;
+}
+
+#logo {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.logo img {
+  width: 6rem;
+  height: 4rem;
+  filter: brightness(50%);
+}
+
+.navi-links {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+}
+
+.navi-links a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  /* overflow: hidden; */
+  background: linear-gradient(to right, #FFB911, #FFB911 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.navi-links a:hover {
+  background-position: 0 100%;
+}
+
+/* Mobile Menu */
+
+.m-navibar {
+  display: block;
+  background-color: transparent;
+  float: right;
+  width: 150px;
+  padding: 0 5px 0 20px;
+  border: 1px solid #eee;
+  z-index: 55;
+}
+
+.m-navibar-links li {
+  line-height: 2.5rem;
+}
+
+.m-navibar-btn {
+  display: grid;
+  justify-content: right;
+  align-items:center;
+  grid-auto-flow: column;
+  cursor: pointer;
+}
+
+.navi-item {
+  list-style-type: none;
+}
+
+.navi-item:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* Cover image */
+
+#image-cover {
+  position: relative;
+  background: url("../images/kombi-prevoz30.jpg");
+  width: 99vw;
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: brightness(120%);
+  box-shadow: 0 8px 6px -6px black;
+}
+
+
+.image-cover-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  width: 55%;
+  height: 45%;
+  padding: 10px;
+  margin-left: 25rem;
+  margin-top: 4rem;
+  text-align: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.image-cover-content-text {
+  color: #fff;
+}
+
+.image-cover-content-text h1 {
+  padding: 30px;
+}
+
+.btn-image {
+  position: relative;
+}
+
+.btn {
+  font-size: 1.5rem;
+  padding: 10px 40px;
+  border-radius: 25px;
+  background: linear-gradient(#FFD928, #FFB911);
+  box-shadow: 0 10px 60px -10px;
+  cursor: pointer;
+}
+
+/* Sponsors Sections */
+
+#sponsors {
+  padding: 10% 10%;
+  text-align: center;
+  color: grey;
+  background-color: #fff;
+}
+
+.sponsors {
+  display: grid;
+  text-align: center;
+  padding: 5% 10%;
+}
+
+.sponsors-track {
+  display: grid;
+  grid-template-columns: repeat(3,3fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+
+/* About Section */
+
+.about {
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: grey;
+}
+
+.about p {
+  padding: 40px;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.about-content {
+  display: grid;
+  grid-gap: 25px;
+}
+
+.about-content p {
+  float: right;
+}
+
+.about-item {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 20px;
+}
+
+.about-item p {
+  align-self: center;
+}
+
+.about-item img {
+  float: left;
+  width: 100%;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.bg-grey {
+  padding: 15px;
+  background-color: rgb(220,220,220);
+}
+
+.bg-white {
+  padding: 15px;
+}
+
+/* Footer */
+
+.footer {
+  padding: 1% 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "address info contact";
+  background: rgb(62, 68, 68);
+  color: #fff;
+}
+
+.footer-bar {
+  text-align: center;
+  background-color: rgb(62, 68, 68);
+  filter: brightness(80%);
+  color: #fff;
+  overflow: auto;
+}
+
+.info img {
+  width: 8rem;
+  height: 6rem;
+  grid-area: info;
+  display: grid;
+  margin: 50px auto;
+}
+
+.footer-head {
+  grid-area: footer-head;
+}
+
+.address {
+  display: grid;
+  align-content: center;
+  grid-area: address;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.contact {
+  display: grid;
+  grid-area: contact;
+  margin: 0 auto;
+  align-content: center;
+}
+
+
+/* Mobile to Tablet */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .navi-links,
+  .m-navibar,
+  .m-navi-toolbar-close {
+    display: none;
+  }
+}
+
+/* Tablet to Desktop */
+
+@media (min-width: 768px) {
+  .m-navibar,
+  .m-navibar-btn,
+  .fa-bars {
+    display: none;
+  }
+}
