@@ -92,6 +92,7 @@ html, body{
   align-content: center;
   grid-auto-flow: column;
   grid-gap: 1.5em;
+  font-size: 1.2rem;
 }
 
 .navi-links a {
@@ -196,6 +197,44 @@ html, body{
   cursor: pointer;
 }
 
+.scroll-down {
+  position: absolute;
+  top: 38rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 34px;
+  height: 55px;
+}
+
+.mousey {
+  width: 3px;
+  height: 35px;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.5s;
+  animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {opacity: 0;}
+  10% {transform: translateY(0); opacity: 1;}
+  100% {transform: translateY(15px); opacity:0;}
+}
+
 /* Sponsors Sections */
 
 #sponsors {
@@ -285,6 +324,7 @@ html, body{
 }
 
 .footer-bar {
+  padding: 2% 10%;
   text-align: center;
   background-color: rgb(62, 68, 68);
   filter: brightness(80%);
@@ -317,6 +357,21 @@ html, body{
   grid-area: contact;
   margin: 0 auto;
   align-content: center;
+}
+
+.contact a {
+  background: linear-gradient(to right, #FFB911, #FFB911 50%, #fff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  background-position: 0 100%;
 }
 
 
