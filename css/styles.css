@@ -22,6 +22,17 @@ html, body{
 
 }
 
+.reklamni-toolbar {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+    background-image: linear-gradient(to right top, #300378, #2c208a, #25349b, #1b46ab, #0f58ba, #0067c4, #0076ce, #0085d6, #0095da, #00a3da, #00b1d7, #00bdd2);
+  color: #fff;
+  box-shadow: 0 8px 6px -6px black;
+}
+
 .navi-toolbar-links {
     display: grid;
     justify-content: end;
@@ -31,7 +42,7 @@ html, body{
   }
 
   .navi-toolbar-links a {
-    background: linear-gradient(to right, #FFB911, #FFB911 50%, black 50%);
+    background: linear-gradient(to right, #005C97, #005C97 50%, black 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -100,7 +111,7 @@ html, body{
   text-decoration: none;
   color: black;
   /* overflow: hidden; */
-  background: linear-gradient(to right, #FFB911, #FFB911 50%, black 50%);
+  background: linear-gradient(to right, #005C97, #005C97 50%, black 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -192,9 +203,9 @@ html, body{
   font-size: 1.5rem;
   padding: 10px 40px;
   border-radius: 25px;
-  background: linear-gradient(#FFD928, #FFB911);
-  box-shadow: 0 10px 60px -10px;
+  background: linear-gradient(#005C97, #363795);
   cursor: pointer;
+  color: #fff;
 }
 
 .scroll-down {
@@ -238,7 +249,7 @@ html, body{
 /* Sponsors Sections */
 
 #sponsors {
-  padding: 10% 10%;
+  padding: 0% 10%;
   text-align: center;
   color: grey;
   background-color: #fff;
@@ -246,18 +257,23 @@ html, body{
 
 .sponsors {
   display: grid;
-  text-align: center;
   padding: 5% 10%;
+  justify-content: center;
+
 }
 
 .sponsors-track {
   display: grid;
-  grid-template-columns: repeat(3,3fr);
-  grid-gap: 30px;
-  text-align: center;
+  grid-template-columns: 100px 100px 100px 100px 150px 150px 100px 100px 100px;
+  grid-gap: 20px;
+  align-items: center;
 }
 
 /* About Section */
+
+#about {
+  padding: 3% 0;
+}
 
 .about {
   text-align: center;
@@ -348,7 +364,7 @@ html, body{
   display: grid;
   align-content: center;
   grid-area: address;
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -360,7 +376,7 @@ html, body{
 }
 
 .contact a {
-  background: linear-gradient(to right, #FFB911, #FFB911 50%, #fff 50%);
+  background: linear-gradient(to right, #005C97, #005C97 50%, #fff 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -372,6 +388,10 @@ html, body{
 
 .contact a:hover {
   background-position: 0 100%;
+}
+
+.fab {
+  font-size: 1.5rem;
 }
 
 
